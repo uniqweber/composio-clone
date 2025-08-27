@@ -41,13 +41,12 @@ export default function CaseStudies() {
                 modules={[Navigation, Pagination, Autoplay]}
                 slidesPerView={1}
                 loop
-                speed={2000}
+                speed={1500}
                 autoplay={{
-                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 navigation={{
-                    prevEl: null, // Initially null, will be updated later
+                    prevEl: null,
                     nextEl: null,
                 }}
                 pagination={{
