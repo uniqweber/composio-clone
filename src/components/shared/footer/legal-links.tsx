@@ -1,6 +1,6 @@
 "use client";
 
-import {legalLinks} from "@/components/constants/navigation";
+import {legalLinks} from "@/constants/navigation";
 import Link from "next/link";
 
 export default function LegalLinks() {

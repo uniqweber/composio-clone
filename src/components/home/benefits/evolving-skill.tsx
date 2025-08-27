@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
 import BenefitCard from "./benefit-card";
 import {MdOutlineHexagon} from "react-icons/md";
 import {motion} from "framer-motion";
-import { orbs } from "@/components/constants/hexagonDots";
-
+import {orbs} from "@/constants/hexagonDots";
 
 export default function EvolvingSkill() {
     return (

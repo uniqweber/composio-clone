@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import {useState} from "react";
 import {FiMenu, FiX} from "react-icons/fi";
 import MobileMenu from "./mobile-menu";
 import Link from "next/link";
 import Image from "next/image";
-import {pageNavigation} from "@/components/constants/navigation";
+import {pageNavigation} from "@/constants/navigation";
 
 const logo = "/images/logo.svg";
 export default function Navbar() {

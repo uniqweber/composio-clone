@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa6";
-import {caseStudies} from "@/components/constants/cases";
+import {caseStudies} from "@/constants/cases";
 import {CaseSlider} from "./case-slider";
 
 export default function CaseStudies() {

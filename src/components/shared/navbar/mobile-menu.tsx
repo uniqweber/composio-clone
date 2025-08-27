@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import {motion, AnimatePresence} from "motion/react";
-import {containerVariants, itemVariants, navTransition, navVariants} from "@/components/constants/mobileMenuAnimation";
+import {containerVariants, itemVariants, navTransition, navVariants} from "@/constants/mobileMenuAnimation";
 import Link from "next/link";
-import { pageNavigation } from "@/components/constants/navigation";
+import {pageNavigation} from "@/constants/navigation";
 
 export default function MobileMenu({
     isMobileMenuOpen,

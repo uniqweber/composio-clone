@@ -1,4 +1,4 @@
-import {socialLinks} from "@/components/constants/navigation";
+import {socialLinks} from "@/constants/navigation";
 
 export default function SocialLinks() {
     return (

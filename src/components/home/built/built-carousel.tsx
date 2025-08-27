@@ -4,7 +4,7 @@ import {useState} from "react";
 import MobileBuiltCarousel from "./mobile-built-carousel";
 import CarouselNavigation from "./built-carousel-navigation";
 import CarouselCard from "./built-carousel-card";
-import { getCarouselStyle, slides } from "@/components/constants/builtCarousel";
+import {getCarouselStyle, slides} from "@/constants/builtCarousel";
 
 const FeatureCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(2);

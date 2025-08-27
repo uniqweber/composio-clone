@@ -2,7 +2,7 @@
 
 import {useEffect, useRef, useState} from "react";
 import {TweetCard} from "./tweet-card";
-import {tweets as testimonials} from "@/components/constants/tweets";
+import {tweets as testimonials} from "@/constants/tweets";
 
 export function TweetMarquee() {
     const marqueeRef = useRef<HTMLDivElement | null>(null);

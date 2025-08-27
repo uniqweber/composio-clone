@@ -1,6 +1,6 @@
 "use client";
 
-import {footerNavigation} from "@/components/constants/navigation";
+import {footerNavigation} from "@/constants/navigation";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 

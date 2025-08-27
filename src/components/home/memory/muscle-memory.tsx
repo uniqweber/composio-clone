@@ -8,7 +8,7 @@ import {useEffect, useRef, useState} from "react";
 import Badge from "./memory-badge";
 import MemoryTextBox from "./memory-text-box";
 import Image from "next/image";
-import { badges } from "@/components/constants/muscleMemory";
+import {badges} from "@/constants/muscleMemory";
 
 export default function MuscleMemory() {
     const [inView, setInView] = useState(false);

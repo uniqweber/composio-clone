@@ -1,6 +1,5 @@
-import { slides } from "@/components/constants/builtCarousel";
+import {slides} from "@/constants/builtCarousel";
 import Image from "next/image";
-
 
 export default function MobileBuiltCarousel() {
     return (

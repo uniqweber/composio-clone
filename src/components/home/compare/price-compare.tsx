@@ -1,8 +1,7 @@
-
 import CompareHead from "./compare-head";
 import CompareForEnterprises from "./compare-for-enterprises";
 import CompareCard from "./compare-card";
-import { pricingData } from "@/components/constants/pricing";
+import {pricingData} from "@/constants/pricing";
 
 export default function PriceCompare() {
     return (

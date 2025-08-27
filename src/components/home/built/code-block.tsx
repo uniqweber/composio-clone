@@ -1,14 +1,12 @@
-
-"use client"
+"use client";
 import {useState, useEffect, useRef} from "react";
 import {useInView, motion} from "framer-motion";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import {atomOneLight} from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { codeLines } from "@/components/constants/builtCarousel";
-
+import {codeLines} from "@/constants/builtCarousel";
 
 export default function CodeBlock() {
-    const [visibleCode, setVisibleCode] = useState<string[]>([]); 
+    const [visibleCode, setVisibleCode] = useState<string[]>([]);
     const ref = useRef<HTMLDivElement | null>(null);
     const hasAnimated = useRef(false);
     const isInView = useInView(ref, {once: true, amount: 0.3});
