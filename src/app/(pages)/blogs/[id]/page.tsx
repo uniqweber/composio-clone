@@ -4,7 +4,7 @@ import Recommended from "@/components/details/recommended";
 import TryCTA from "@/components/details/try-CTA";
 import React from "react";
 
-export default function page() {
+export default function BlogDetails() {
     return (
         <>
             <DetailsHead />
