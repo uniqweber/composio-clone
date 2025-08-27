@@ -13,7 +13,7 @@ export default function Recommended() {
                 {blogs.slice(0, 4).map((blog, index) => (
                     <div
                         key={index}
-                        onClick={() => router.push(`/blogs/your-slug-here`)}
+                        onClick={() => router.push(`/blogs/your-slug`)}
                         className="p-4 hover:bg-white/60  border border-black/20 font-roobert tracking-wide text-black/60 font-light flex flex-col cursor-pointer"
                     >
                         <div className=" h-full flex flex-col justify-between">

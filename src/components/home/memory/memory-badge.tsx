@@ -1,6 +1,16 @@
 import {motion} from "motion/react";
 
-export default function Badge({title, count, className, inView, highlightColor, index}) {
+interface BadgeProps {
+    title: string;
+    count: string;
+    className?: string;
+    inView: boolean;
+    highlightColor: string;
+    index: number;
+}
+
+
+export default function Badge({title, count, className, inView, highlightColor, index}: BadgeProps) {
     const staggerDelay = index * 0.15;
     return (
         <div className={`bg-light w-max rounded-full pl-4 pr-1 py-1 border border-black/20 ${className}`}>

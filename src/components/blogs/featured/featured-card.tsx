@@ -14,7 +14,7 @@ export default function FeaturedCard({article}: {article: Article}) {
     const router = useRouter();
     return (
         <div
-            onClick={() => router.push(`/blogs/your-slug-here`)}
+            onClick={() => router.push(`/blogs/your-slug`)}
             className="p-4 cursor-pointer border border-black/20 font-roobert tracking-wide text-black/60 font-light flex flex-col"
         >
             <div>

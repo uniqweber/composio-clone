@@ -2,7 +2,7 @@ import TableRow from "./table-row";
 import TableHeader from "./table-head";
 import {Fragment} from "react";
 import { featuresData } from "@/constants/pricingDataTable";
-import CategoryHead from "./category-Head";
+import CategoryHead from "./category-head";
 
 export default function PricingTable() {
     return (
