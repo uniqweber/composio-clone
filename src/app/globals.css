@@ -1,26 +1,127 @@
 @import "tailwindcss";
+@theme {
+    /* Colors */
+    --color-light: #f7f4f0;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* Typography */
+    --font-tinos: "Tinos", serif;
+    --font-ibm: "IBM Plex Serif", serif;
+    --font-roobert: "Roobert", sans-serif;
+    --font-roobert-mono: "Roobert Mono", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ======================================== CUSTOM FONT FACES ======================================== */
+@font-face {
+    font-family: "Roobert";
+    src: url("/fonts/RoobertTRIAL-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: "Roobert";
+    src: url("/fonts/RoobertTRIAL-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: "Roobert Mono";
+    src: url("/fonts/RoobertMonoTRIAL-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roobert Mono";
+    src: url("/fonts/RoobertMonoTRIAL-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ======================================== BASE STYLES ======================================== */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-light);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ======================================== UTILITY CLASSES ======================================== */
+@layer utilities {
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .flex-between {
+        @apply flex items-center justify-between;
+    }
+
+    .padding-x {
+        @apply px-6 xl:px-13;
+    }
+}
+
+/* ======================================== ANIMATIONS & KEYFRAMES ======================================== */
+/* Slide Animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-slide {
+    animation: slide 80s linear infinite;
+}
+
+/* Pixel Reveal Animation */
+@keyframes pixelReveal {
+    0% {
+        filter: blur(10px) contrast(200%);
+    }
+    50% {
+        filter: blur(2px) contrast(150%);
+    }
+    100% {
+        filter: blur(0) contrast(100%);
+    }
+}
+
+.pixel-fade {
+    animation: pixelReveal 0.8s ease-in-out;
+}
+
+/* Swiper Animation */
+.swiper-slide {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+.swiper-slide-active {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.custom-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.228);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-bullet-active {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    cursor: pointer;
 }
